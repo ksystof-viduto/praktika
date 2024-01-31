@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(190, 126, 41);
+}
+
+span {
+    display: block;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    width: 600px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+
+.block-a {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 20px;
+
+    float: left;
+    margin-left: 200px;
+    margin-bottom: 2px;
+}
+
+.block-b {
+    width: 100px;
+    height: 100px;
+    background-color: #ffe600;
+    border-radius: 20px;
+
+
+    clear: left;
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 2px;
+}
+
+.block-c {
+    width: 100px;
+    height: 100px;
+    background-color: #1eff00;
+    border-radius: 20px;
+
+    float: left;
+    margin-left: 2px;
+}
+
+.block-d {
+    width: 100px;
+    height: 100px;
+    background-color: #00ffc8;
+    border-radius: 20px;
+
+    clear: left;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 2px;
+}
+
+.block-e {
+    width: 100px;
+    height: 100px;
+    background-color: #ff8800;
+    border-radius: 20px;
+
+
+    float: left;
+    margin-left: 2px;
+}
+
+.block-f {
+    width: 100px;
+    height: 100px;
+    background-color: #ff00d4;
+    border-radius: 20px;
+
+    float: left;
+    margin-left: 2px;
+}

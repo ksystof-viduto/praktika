@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --primary-dark: #070439;
+    --primary-desaturated: #585989;
+
+    --accent-bright: #3065f8;
+    --accent-moderate: #3c9f8f;
+
+    --neutral-light: #f6f6fe;
+    --neutral-gray: #bfbfbf;
+
+    --raleway: 'Raleway', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+
+
+body {
+    font-family: var(--open-sans);
+    margin: 0rem;
+    background-color: var(--neutral-light);
+}
+
+.illustration {
+    width: 100%;
+    min-width: 375px;
+    max-width: 850px;
+}
+
+.logo {
+    width: 8.5rem;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-family: var(--raleway);
+    color: var(--primary-dark);
+}
+
+button {
+    width: 15rem;
+    height: 2rem;
+    background-color: var(--accent-bright);
+    color: var(--neutral-light);
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-family: var(--raleway);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input {
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header .main-nav span {
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 1rem;
+
+}
+
+.header .main-nav span:hover {
+    background-color: var(--accent-bright);
+    color: var(--neutral-light);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.get-started__text {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.get-started__btn {
+    width: 100%;
+}
+
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0px;
+    margin-bottom: 3rem;
+}
+
+.desc h3 {
+    text-align: center;
+}
+
+.desc .underlined-text {
+    text-align: center;
+    color: var(--accent-moderate);
+    text-decoration: underline;
+}
+
+.desc__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+.desc__text {
+    text-align: justify;
+    color: var(--primary-desaturated);
+}
+
+.desc__feedback {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-align: justify;
+    font-size: .85rem;
+    padding: 1.5rem;
+    color: var(--primary-dark);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.early-access {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-desaturated);
+    color: var(--neutral-light);
+
+    text-align: center;
+
+    padding: 35px 0px;
+
+}
+
+.early-access__text {
+    padding: 0px 15px;
+}
+
+.early-access h3 {
+    color: var(--neutral-light);
+}
+
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--neutral-light);
+}
+
+.footer span {
+    display: flex;
+    justify-content: left;
+}
+
+.footer__info {
+    padding: 2rem;
+    line-height: 2.2rem;
+}
+
+.footer__contacts {
+    padding-bottom: 1rem;
+}
+
+.footer__company {
+    padding-bottom: 1rem;
+}
+
+.icon {
+    padding-right: 1rem;
+    height: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .illustration {
+        min-width: 500px;
+    }
+
+    .get-started {
+        display: flex;
+        justify-content: left;
+        flex-direction: row-reverse;
+    }
+
+    .get-started__text {
+        text-align: left;
+    }
+
+    .desc {
+        display: flex;
+        justify-content: left;
+        flex-direction: row-reverse;
+    }
+
+    .desc .desc__main {
+        display: flex;
+        justify-content: left;
+    }
+
+    .desc .desc__main .desc__feedback {
+        align-self: flex-start;
+    }
+
+    .desc .desc__main .underlined-text {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .desc .desc__text {
+        text-align: left;
+        align-self: flex-start;
+    }
+
+    .desc .desc__main h3 {
+        text-align: left;
+    }
+
+    .early-access {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .early-access__text {
+        text-align: left;
+        max-width: 50%;
+    }
+
+    .early-access__btn {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__info {
+        display: flex;
+        justify-content: space-around;
+        align-self: self-end;
+    }
+
+    input[placeholder="email@example.com"] {
+        width: 100%;
+    }
+
+    input[placeholder="Enter your email..."] {
+        width: 60%;
+    }
+
+    .get-started__btn {
+        display: flex;
+        gap: 1rem;
+        justify-content: left;
+        align-items: baseline;
+
+    }
+
+    .get-started__btn button {
+        width: 30%;
+    }
+
+}

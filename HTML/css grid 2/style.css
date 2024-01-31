@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: saddlebrown;
+    text-align: center;
+}
+
+nav {
+    background-color: aquamarine;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+}
+
+aside {
+    background-color: green;
+}
+
+aside article {
+    height: 250px;
+}
+
+.right-side {
+    background-color: aqua;
+}

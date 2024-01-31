@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            margin-bottom: 5px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+        form {
+            display: table;
+        }
+
+        p {
+            display: table-row;
+        }
+
+        label {
+            display: table-cell;
+
+        }
+
+        input {
+            display: table-cell;
+            box-sizing: border-box;
+        }
+
+        .comment {
+            display: flex;
+            align-items: start;
+        }
+
+        .comment label {
+            display: table-cell;
+            align-items: start;
+            margin-right: 49px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <form id="danceform">
+        <p>
+            <label>Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+        </p>
+        <p>
+            <label>Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+            <label>Phone Number</label>
+            <input type="text" id="areacode" name="areacode" size="3" placeholder="Area">
+            -
+            <input type="text" id="phone" name="phone" placeholder="Phone Number">
+        </p>
+        <p>
+            <label>Gender</label>
+            <input type="radio" id="gender" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+        </p>
+
+
+        <p>
+            <label>Address</label>
+            <input class="street" type="text" id="streetaddress" name="streetaddress" placeholder="Street Address">
+            <br>
+            <input type="text" id="streetaddress2" name="streetaddress2" placeholder="Street Address Line 2">
+            <br>
+            <input type="text" id="city" name="city" placeholder="City">
+            <input type="text" id="state" name="state" placeholder="State">
+            <br>
+            <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code">
+
+        </p>
+
+        <p>
+            <label for="dancetype">Type of Dance</label>
+            <input type="radio" id="dancetype" name="dancetype" value="Salsa"> Salsa
+            <br>
+            <input type="radio" name="dancetype" value="Bachata"> Bachata
+            <br>
+            <input type="radio" name="dancetype" value="Tango"> Tango
+            <br>
+            <input type="radio" name="dancetype" value="Hip Hop"> Hip Hop
+            <br>
+            <input type="radio" name="dancetype" value="Club"> Club
+            <br>
+            <input type="radio" name="dancetype">
+            <input type="text" name="dancetype" placeholder="Other" size="10">
+        </p>
+
+        <p>
+            <label for="startday">Start Day & Time</label>
+            <input type="date" id="startday" name="startday">
+            <input type="time" id="time" name="time">
+        </p>
+
+    </form>
+
+
+    <div class="comment">
+        <label>Comments</label>
+        <textarea rows="4" cols="50" name="comment" form="danceform"></textarea>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

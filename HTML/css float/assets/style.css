@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 1rem;
+    overflow: auto;
+
+    font-family: 'Roboto', sans-serif;
+    color: #fcfcfc;
+
+
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+.product {
+    margin: auto;
+    width: 750px;
+    background-color: #000000;
+    padding: 2rem;
+    overflow: auto;
+    border-radius: 6px;
+}
+
+.logo {
+    float: left;
+    width: 100px;
+    padding: 0px 10px 0px 0px;
+
+}
+
+.product__header-image {
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+.product__left {
+    font-size: 12px;
+    text-align: justify;
+    width: 50%;
+    padding-right: 10px;
+
+    clear: left;
+    float: left;
+
+}
+
+.product__right {
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+
+.product__right img {
+    width: 100%;
+
+}
+
+footer {
+    font-weight: bold;
+    display: inline-flex;
+    place-content: center;
+    font-size: 1.05rem;
+    width: 100%;
+    gap: 4rem;
+    padding-top: 20px;
+}

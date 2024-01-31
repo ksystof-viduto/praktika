@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&family=Roboto:wght@300;400&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: var(--roboto);
+    font-size: 16px;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --violet: #a00d8c;
+    --gray: #d1d1d1;
+    --roboto: 'Roboto', sans-serif;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header .logo {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--violet);
+    padding: 10px 20px;
+    font-weight: bold;
+    /* background-color: var(--gray); */
+}
+
+header nav {
+    padding: 10px;
+    background-color: var(--violet);
+    color: var(--white);
+}
+
+header span {
+    display: block;
+    padding: 5px 15px;
+}
+
+header span:hover {
+    background-color: #b44eb4;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+
+
+.header-image {
+    background-image: url("images/dog-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    color: var(--white);
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main h1 {
+    text-align: center;
+    color: var(--violet);
+    font-size: 2rem;
+}
+
+main .dogs .dog img {
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767) {
+    main .dogs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main .dogs .dog {
+        width: 18%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main .dogs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    main .dogs .dog {
+        width: 35%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+

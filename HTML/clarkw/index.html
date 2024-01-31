@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Square Example</title>
+  </head>
+  <body>
+    <canvas id="logoCanvas" width="300" height="300"></canvas>
+
+    <script>
+      const canvas = document.getElementById("logoCanvas");
+      const context = canvas.getContext("2d");
+    
+      // Draw the green circle background
+      context.beginPath();
+      context.arc(canvas.width / 2, canvas.height / 2, 140, 0, 2 * Math.PI);
+      context.fillStyle = "#009933";
+      context.fill();
+    
+      // Draw the white border
+      context.beginPath();
+      context.arc(canvas.width / 2, canvas.height / 2, 130, 0, 2 * Math.PI);
+      context.strokeStyle = "#FFFFFF";
+      context.lineWidth = 10;
+      context.stroke();
+    
+      // Draw the orange border
+      context.beginPath();
+      context.arc(canvas.width / 2, canvas.height / 2, 120, 0, 2 * Math.PI);
+      context.strokeStyle = "#FFA500";
+      context.lineWidth = 10;
+      context.stroke();
+    
+      // Draw the letter "C" in the center of the canvas
+      context.font = "bold 220px Arial";
+      context.fillStyle = "#FFFFFF";
+      context.textAlign = "center";
+      context.textBaseline = "middle";
+      context.fillText("C", canvas.width / 2, canvas.height / 2);
+
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.filter-box-1{
+    filter: invert(90%) sepia(23%) saturate(1208%) hue-rotate(327deg) brightness(105%) contrast(98%);
+}
+
+.filter-box-2{
+    filter: invert(54%) sepia(60%) saturate(552%) hue-rotate(135deg) brightness(101%) contrast(83%);
+}
+
+.filter-box-3{
+    filter: invert(55%) sepia(100%) saturate(326%) hue-rotate(119deg) brightness(89%) contrast(96%);
+}
+
+* {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    height: 100vh;
+
+}
+
+main {
+    overflow: hidden;
+    border-radius: .5rem;
+    font-size: 0px;
+    position: relative;
+}
+
+main div {
+    padding: 45px;
+    font-size: 15px;
+    width: 200px;
+
+    vertical-align: top;
+    height: 350px;
+
+    position: relative;
+
+    color: #ffffff;
+}
+
+main div img {
+    position: absolute;
+    top: 2.5rem;
+    width: 4.5rem;
+}
+
+main div h1 {
+    margin-top: 3.5rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+main div p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5rem;
+    height: 2.5rem;
+    width: 8.3rem;
+
+    position: absolute;
+    bottom: 2rem;
+    left: 35px;
+}
+
+main .box-1 button {
+    color: #e28325;
+}
+
+main .box-2 button {
+    color: #016972;
+}
+
+main .box-3 button {
+    color: #00403F;
+}
+
+main .box-1 span {
+    width: 2.7rem;
+    height: 2.7rem;
+    top: 2.2rem;
+    left: 2rem;
+    border-radius: 30px;
+    background-color: #B06C1D;
+    position: absolute;
+    overflow: hidden;
+}
+
+main .box-2 span {
+    width: 2.7rem;
+    height: 2.7rem;
+    top: 2.2rem;
+    left: 2rem;
+    border-radius: 30px;
+    background-color: #005659;
+    position: absolute;
+    overflow: hidden;
+}
+
+main .box-3 span {
+    width: 2.7rem;
+    height: 2.7rem;
+    top: 2.2rem;
+    left: 2rem;
+    border-radius: 30px;
+    background-color: #043133;
+    position: absolute;
+    overflow: hidden;
+}
+
+main .box-1 {
+    background-color: #E28525;
+    display: inline-block;
+    color: #FECA8B;
+}
+
+main .box-2 {
+    background-color: #016972;
+    display: inline-block;
+    color: #9EDBE5;
+}
+
+main .box-3 {
+    background-color: #00403F;
+    display: inline-block;
+    color: #9FCAC9;
+}

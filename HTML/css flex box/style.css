@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.p-one {
+    background-color: #833dc5;
+    width: 3rem;
+    height: 8rem;
+}
+
+.p-two {
+    background-color: #2691d8;
+    width: 7rem;
+    height: 7rem;
+}
+
+.p-three {
+    background-color: #00bd00;
+    width: 9rem;
+    height: 3rem;
+}
